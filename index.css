@@ -1,0 +1,423 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F5F5EF;
+}
+.container {
+    padding: 0 52px;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0;
+}
+nav .logo {
+    font-size: 42px;
+    font-weight: bold;
+    
+}
+nav a {
+    color:#1D221B;
+    text-decoration: none;
+    font-size: 24px;
+
+}
+.links {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+}
+
+
+.header {
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+   margin-bottom: 120px;
+}
+.h-heading {
+    font-size: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+.h-image img {
+    border-radius: 38px;
+    height: 772px;
+    width: 100%;
+}
+
+
+.images-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.image-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.image-container img {
+    height: 300px;
+    width: 100%;
+    border-radius: 28px;
+}
+.image-container h1 {
+    font-size: 20px;
+    margin: 0;
+    color: #1D221B;
+
+}
+.image-container p {
+    color: #1D221B9E;
+    font-size: 17px;
+    margin: 0;
+
+}
+
+
+.main-area {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 120px;
+    }
+.main-text h3{
+    font-size: 24px;
+    color: #1D221B;
+    width: 40%;
+
+}
+.main-text{
+    flex: 1;
+    margin-right: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.feature {
+    margin-top: 50px;
+    padding: 2rem;
+}
+.feature h2 {
+    font-size: 36px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.featured-container {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+}
+.featured-project {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    justify-content: center;
+    align-items: center;
+}
+.featured-project img {
+    width: 100%;
+    height: 477px;
+    border-radius: 18px;
+}
+.featured-project h3 {
+    font-size: 20px;
+    margin: 10px 0 5px;
+}
+.featured-project p {
+    font-size: 16px;
+    color: #666;
+}
+.featured-project button {
+    padding: 15px 20px;
+    background: rgb(250, 180, 1);
+    color: black;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.footer{
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.footer p {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: -0.01em;
+    color: #1D221B9E;
+
+
+
+}
+.button{
+    width: 158px;
+    height: 48px;
+    margin-top: 10px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color:transparent;
+    border: 2px solid #17340929;
+    border-radius: 10px;
+}
+
+.text11{
+    width:1,344px;
+    height: 356px;
+    padding: 96px 0px 96px 0px;
+    gap: 0px;
+    border: 0px 0px 2px 0px;
+    max-width: 600px;
+   
+
+}
+.text11 h2{
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 52px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+
+@media (max-width: 1212px) {
+    .container {
+        padding: 0 32px;
+    }
+
+    nav .logo {
+        font-size: 36px;
+    }
+    nav a {
+        font-size: 18px;
+    }
+
+    .h-heading {
+        font-size: 80px;
+        line-height: 90px;
+    }
+    .h-image img {
+        height: 600px;
+    }
+
+    .images-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .main-text h3 {
+        font-size: 20px;
+        width: 60%;
+    }
+
+    .featured-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .featured-project img {
+        height: 350px;
+    }
+
+    .text11 h2 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .footer p {
+        font-size: 1.5rem;
+    }
+    .button {
+        font-size: 14px;
+        width: 140px;
+        height: 40px;
+
+    }
+}
+
+
+@media (max-width:802px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    nav .links {
+        gap: 16px;
+        flex-direction: column;
+           
+    }
+
+    .h-heading {
+        font-size: 60px;
+        line-height: 70px;
+    }
+    .h-image img {
+        height: 400px;
+    }
+
+    .images-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .main-text h3 {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .featured-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .featured-project img {
+        height: 300px;
+    }
+
+    .text11 h2 {
+        font-size: 28px;
+        line-height: 34px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .footer p {
+        font-size: 1.2rem;
+    }
+    .button {
+        font-size: 12px;
+        width: 120px;
+        height: 36px;
+    }
+}
+
+
+@media (max-width: 588px) {
+    .container {
+        padding: 0 8px;
+    }
+
+    nav .logo {
+        font-size: 28px;
+    }
+    nav a {
+        font-size: 14px;
+    }
+
+    .h-heading {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .h-image img {
+        height: 250px;
+    }
+
+    .images-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+
+    .main-text h3 {
+        font-size: 16px;
+    }
+
+    .featured-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .featured-project img {
+        height: 200px;
+    }
+
+    .text11 h2 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .footer p {
+        font-size: 1rem;
+    }
+    .button {
+        font-size: 10px;
+        width: 100px;
+        height: 30px;
+    }
+}@media (max-width:377px) {
+    .container {
+        padding: 0 8px;
+        
+    }
+
+    nav .logo {
+        font-size: 28px;
+    }
+    nav a {
+        font-size: 14px;
+        
+    }
+
+    .h-heading {
+        font-size: 40px;
+        text-align: center;
+        line-height:2;
+    }
+    .h-heading1{
+        height:0px;
+    }
+    .h-image img {
+        height: 250px;
+    }
+
+    .images-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+
+    .main-text h3 {
+        font-size: 16px;
+    }
+
+    .featured-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .featured-project img {
+        height: 200px;
+    }
+
+    .text11 h2 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    .footer p {
+        font-size: 1rem;
+    }
+    .button {
+        font-size: 10px;
+        width: 100px;
+        height: 30px;
+    }
+}
